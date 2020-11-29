@@ -10,12 +10,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import br.com.pmanoelm.Loja.LojaDeArtigosGerais.Model.Usuario;
-import lombok.Getter;
-import lombok.Setter;
 
 @Entity
-@Setter
-@Getter
 @Table(name = "usar_role")
 public class UserRole {
 	@Id
@@ -34,6 +30,43 @@ public class UserRole {
 		this.user = user;
 		this.role = role;
 	}
+
+
+
+	public Long getUserRoleId() {
+		return userRoleId;
+	}
+
+
+
+	public void setUserRoleId(Long userRoleId) {
+		this.userRoleId = userRoleId;
+	}
+
+
+
+	public Usuario getUser() {
+		return user;
+	}
+
+
+
+	public void setUser(Usuario user) {
+		this.user = user;
+	}
+
+
+
+	public Role getRole() {
+		return role;
+	}
+
+
+
+	public void setRole(Role role) {
+		this.role = role;
+	}
+	
 	
 	
 	

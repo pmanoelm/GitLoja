@@ -8,4 +8,6 @@ import br.com.pmanoelm.Loja.LojaDeArtigosGerais.Model.Usuario;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
+	Usuario findByUsername(String username);
+
 }
